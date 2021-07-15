@@ -1,0 +1,18 @@
+{% extends 'learn_log/base.html' %}
+{% load bootstrap4 %}
+
+{% block page_header %}
+    <h1>Add a new topic</h1>
+{% endblock page_header %}
+
+{% block content %}
+    <form action="{% url 'learn_log:new_topic' %}" method="post" class="form">
+        <!-- action 告诉表单数据发送到哪里，此处发送到 views.py 中的 new_topic()函数中 -->
+        {% csrf_token %}  <!-- 防止攻击者对服务器进行未授权的访问 -->
+        {% bootstrap_form form %}  <!-- 显示表单， .as_p 表示 Django 将会以段落格式渲染元素 -->
+
+        {% buttons %}
+            <button name="submit" class="btn btn-primary">Add Topic</button> <!-- 为表单创建提交按钮 -->
+        {% endbuttons %}
+    </form>
+{% endblock content %}
