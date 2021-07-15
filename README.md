@@ -5,6 +5,7 @@
 运行方法:<br>
 安装位于 [requirements.txt](requirements.txt) 中的 python 模块，在控制台中切换到该文件夹，运行<br>
 ```
+python manage.py migrate
 python manage.py runserver
 ```
 <br>之后用浏览器打开 http://127.0.0.1:8000/ 即可看见页面
