@@ -1,5 +1,5 @@
 # Learning-Log 学习笔记网站
-###&nbsp;&nbsp;&nbsp;&nbsp; 作者: 刘子滔&nbsp;&nbsp;学号:20011520
+### &nbsp;&nbsp;&nbsp;&nbsp;作者: 刘子滔&nbsp;&nbsp;学号:20011520
 
 
 运行方法:<br>
